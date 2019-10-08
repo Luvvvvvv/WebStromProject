@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>id选择器</title>
+    <style type="text/css">
+        #bold{font-weight: bold;color: red;}
+        #font22{font-size: 22px;}
+    </style>
+</head>
+<body>
+<p id="bold">段落1：设置字体红色、加粗</p>
+<p id="font22">段落2：设置字号为22px</p>
+<p id="font22">段落3：设置字号为22px</p><!--浏览器不报错，但这种用法不允许，因为Javascript等语言调用id会出错-->
+<p id="bold font22">段落4：设置字体为红色、加粗、22px</p> <!--错误写法-->
+</body>
+</html>
