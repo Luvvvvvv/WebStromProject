@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header .img {
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #525252;
+}
