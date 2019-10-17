@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>change</title>
+    <style type="text/css">
+        div {
+            width: 180px;
+            height: 175px;
+            display: inline;   /*转换为行内元素,宽和高失效*/
+        }
+
+        span {
+            width: 180px;
+            height: 175px;
+            display: inline-block;    /*转换为行内块元素*/
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .spring {
+            background: url("img_01.jpg");
+        }
+
+        .summer {
+            background: url("img_02.jpg");
+        }
+
+        .autumn {
+            background: url("img_03.jpg");
+        }
+
+        .winter {
+            background: url("img_04.jpg");
+        }
+    </style>
+</head>
+<body>
+<p>div部分</p>
+<div class="spring"></div>
+<div class="summer"></div>
+<div class="autumn"></div>
+<div class="winter"></div>
+<p>span部分</p>
+<span class="spring"></span>
+<span class="summer"></span>
+<span class="autumn"></span>
+<span class="winter"></span>
+</body>
+</html>
