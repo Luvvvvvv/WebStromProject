@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+body {
+    font-family: "微软雅黑";
+    background: #fdfdfd;
+}
+
+#bg {
+    width: 980px;
+    height: 617px;
+    background: url("bg.jpg") no-repeat;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.nav {
+    width: 848px;
+    height: 46px;
+    background: url("nav.png") no-repeat;
+    margin: 0 auto;
+    padding: 40px 0 0 123px;
+}
+
+.nav span {
+    color: #685649;
+    font-size: 16px;
+    padding: 0 30px;
+}
+
+.nav .margin_more {
+    margin-right: 240px;
+}

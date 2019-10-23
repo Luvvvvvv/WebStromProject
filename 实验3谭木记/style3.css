@@ -9,3 +9,67 @@
     text-align: center;
     background-color: #525252;
 }
+
+.banner {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.banner p {
+    font-size: 18px;
+    height: 40px;
+}
+
+.content {
+    font-family: "隶书";
+    width: 980px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    font-size: 40px;
+    text-align: center;
+    color: saddlebrown;
+}
+
+.content h3 {
+    text-align: center;
+    color: saddlebrown;
+}
+
+.content hr {
+    width: 980px;
+    margin: 0 auto;
+    color: #a5a5a5
+}
+
+.content em {
+    color: saddlebrown;
+    font-size: 20px;
+}
+
+.content b {
+    color: saddlebrown;
+}
+
+.content ins {
+    text-underline-color: saddlebrown;
+}
+
+.content strong {
+    background-color: yellow;
+
+}
+
+.rights {
+    width: 980px;
+    height: 120px;
+    margin: 0 auto;
+    color: white;
+    background-color: #525252;
+}
+
+.rights p {
+    text-align: center;
+    line-height: 120px;
+}
