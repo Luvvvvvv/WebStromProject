@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .one, .two, .three {
+            float: left;
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            background: red;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            background-color: blue;
+        }
+
+        .box:after {
+            display: block;
+            clear: both;
+            content: "";
+            visibility: hidden;
+            height: 0;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="box">
+        <div class="one">div1</div>
+        <div class="two">div2</div>
+        <div class="three">div3</div>
+    </div>
+</div>
+</body>
+</html>
