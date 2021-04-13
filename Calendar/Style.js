@@ -42,21 +42,6 @@ const getNextMonthCount = (year, month) => {
     }
 }
 
-//
-let weekStr = '日一二三四五六';
-weekArr = weekStr.split("").map(item => ' ' + item);
-
-let oFargWeek = document.createDocumentFragment();
-weekArr.forEach(item => {
-    let oSpan = document.createElement('span');
-    let oText = document.createTextNode(item);
-    oSpan.appendChild(oText);
-    oSpan.classList.add('week-item');
-    oFargWeek.appendChild(oSpan);
-});
-let weekWrap = document.getElementById('weekLine');
-weekWrap.appendChild(oFargWeek);
-
 //获取数据
 const updateCalendar = (year, month, day) => {
     if (typeof year === 'undefined' && typeof month === 'undefined' && typeof day === 'undefined') {
@@ -128,24 +113,11 @@ oNextButton.addEventListener('click', function () {
     }
 });
 
+//为每个日期添加点击事件
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//dayInfo dayNum
+var dayNumber = new Date();
+var dayNum=dayNumber.getDate();
+    document.getElementById("dayNum").innerHTML = day;

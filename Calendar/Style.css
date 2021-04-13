@@ -1,5 +1,7 @@
-body{margin: 0;
-padding: 0;}
+body {
+    margin: 0;
+    padding: 0;
+}
 
 /*top*/
 .downLoad {
@@ -82,6 +84,24 @@ padding: 0;}
 
 
 /*日历*/
+.weekNum {
+    font-size: 20px;
+    padding: 20px 5px 5px;
+    display: inline-block;
+    position: absolute;
+}
+
+.week {
+    float: left;
+    text-align: center;
+    width: 0.52rem;
+    margin: 0 1px;
+}
+
+.weekend {
+    color: #d03f3f;
+}
+
 .week-line {
     letter-spacing: 58px;
     font-size: 20px;
@@ -91,8 +111,8 @@ padding: 0;}
 }
 
 .date-wrap {
-    position: relative;
-    top: -130px;
+    position: absolute;
+    top: px;
     left: 10px;
 }
 
@@ -107,13 +127,20 @@ padding: 0;}
     border: 1px solid beige;
     text-align: center;
 }
+ 
+/* 日期 */
+.swiper{
+    position: absolute;
+}
+
+
 
 /*astro*/
 .astro {
     background: url("image/astro/astrobackground.jpg");
     height: 1.07rem;
     position: relative;
-    top: 100px;
+    top: 1100px;
     color: white;
     font-size: 25px;
 }

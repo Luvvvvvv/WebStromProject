@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" style="font-size: 273.067px;background-color: rgb(246,246,246);">
+
 <head>
     <meta charset="UTF-8">
     <title>Calender</title>
@@ -7,7 +8,6 @@
 </head>
 
 <body>
-<div id="app">
     <div class="index">
         <div class="downLoad"></div>
         <div class="header">
@@ -22,49 +22,63 @@
                 <a href="#" class style="color:rgb(255,255,255);text-decoration: none">节</a>
             </span>
         </div>
-        <div>
-            <div id="weekLine" class="week-line"></div>
-            <div id="dateWrap" class="date-wrap"></div>
+    </div>
+    <div>
+        <div class="weekNum">
+            <div class="week weekend">日</div>
+            <div class="week">一</div>
+            <div class="week">二</div>
+            <div class="week">三</div>
+            <div class="week">四</div>
+            <div class="week">五</div>
+            <div class="week weekend">六</div>
+        </div>
+        <div id="dateWrap" class="date-wrap"></div>
+    </div>
+
+    <div class="swiper">
+        <div class="dayinfo">
+            <div id="dayNum"></div>
         </div>
     </div>
-</div>
 
-<div class="astro">
-    <div class="left">
-        <div class="line">
-            <span class="title">综合运势</span>
-            <div class="fortunate">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star blur"></div>
-                <div class="star blur"></div>
+    <div class="astro">
+        <div class="left">
+            <div class="line">
+                <span class="title">综合运势</span>
+                <div class="fortunate">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star blur"></div>
+                    <div class="star blur"></div>
+                </div>
+            </div>
+            <div class="line">
+                <span class="title">幸运颜色</span>
+                <span>群青</span>
+            </div>
+            <div class="line">
+                <span class="title">幸运数字</span>
+                <span>34</span>
+            </div>
+            <div class="line">
+                <span class="title">速配星座</span>
+                <span>处女座</span>
             </div>
         </div>
-        <div class="line">
-            <span class="title">幸运颜色</span>
-            <span>群青</span>
-        </div>
-        <div class="line">
-            <span class="title">幸运数字</span>
-            <span>34</span>
-        </div>
-        <div class="line">
-            <span class="title">速配星座</span>
-            <span>处女座</span>
-        </div>
-    </div>
-    <div class="right">
-        <div class="astroname">
-            处女座
-        </div>
-        <div class="logo logo_5">
+        <div class="right">
+            <div class="astroname">
+                处女座
+            </div>
+            <div class="logo logo_5">
 
+            </div>
         </div>
     </div>
-</div>
 
 </body>
+
 </html>
 
 <script type="text/javascript" src="Style.js"></script>
