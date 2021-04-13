@@ -1,0 +1,179 @@
+body{margin: 0;
+padding: 0;}
+
+/*top*/
+.downLoad {
+    background: url("image/top.jpg");
+    background-size: cover;
+    width: 100%;
+    height: .5rem;
+}
+
+/*header*/
+.header {
+    height: .4rem;
+    width: 100%;
+    background: #d03f3f;
+    box-sizing: border-box;
+    position: relative;
+    color: #fff;
+}
+
+.header .pre_month {
+    float: left;
+    background-size: cover;
+    background: url("image/header/left_arrow.png") no-repeat;
+    width: 14px;
+    height: 26px;
+    margin-top: .15rem;
+    margin-left: .15rem;
+    border: none;
+}
+
+.header span {
+    font-size: 25px;
+    float: left;
+    margin-top: 36px;
+    margin-left: 40px;
+}
+
+.header span button {
+    border: none;
+    background-color: #d03f3f;
+    color: white;
+    font-size: 25px;
+}
+
+.header .year:after {
+    content: "";
+    float: right;
+    width: 19px;
+    height: 11px;
+    background: url("image/header/down_arrow.png");
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
+.header .bhd_month {
+    float: left;
+    background-size: cover;
+    background: url("image/header/right_arrow.png") no-repeat;
+    width: 14px;
+    height: 26px;
+    margin-top: .15rem;
+    margin-left: .15rem;
+    border: none;
+}
+
+.header .right {
+    font-size: 38px;
+}
+
+.header .circle {
+    float: right;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+/*日历*/
+.week-line {
+    letter-spacing: 58px;
+    font-size: 20px;
+    line-height: 80px;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.date-wrap {
+    position: relative;
+    top: -130px;
+    left: 10px;
+}
+
+.date-line {
+    height: 180px;
+}
+
+.date-item {
+    font-size: 40px;
+    display: inline-block;
+    width: 140px;
+    border: 1px solid beige;
+    text-align: center;
+}
+
+/*astro*/
+.astro {
+    background: url("image/astro/astrobackground.jpg");
+    height: 1.07rem;
+    position: relative;
+    top: 100px;
+    color: white;
+    font-size: 25px;
+}
+
+
+.astro .left {
+    float: left;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.astro .left .line {
+
+    height: .15rem;
+    margin-top: .05rem;
+
+}
+
+.astro .left .line .title {
+    float: left;
+    padding-right: .3rem;
+}
+
+.astro .left .line .fortunate {
+    float: left;
+}
+
+.astro .left .line .fortunate .star {
+    background: url("image/astro/star.png");
+    background-size: cover;
+    min-width: .13rem;
+    max-width: .13rem;
+    max-height: .12rem;
+    min-height: .12rem;
+    float: left;
+    position: relative;
+}
+
+.astro .left .line .fortunate .blur {
+    background: url("image/astro/star_blur.png");
+    background-size: cover;
+}
+
+.astro .right {
+    float: right;
+    margin-top: .1rem;
+    margin-right: .3rem;
+    text-align: center;
+}
+
+
+.astro .right .logo {
+    float: right;
+    height: .5rem;
+    width: .5rem;
+}
+
+.astro .right .logo_5 {
+    background: url("image/astro/virgo.png");
+    background-size: 100%;
+    margin-top: 30px;
+}
