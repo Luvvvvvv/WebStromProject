@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <title>Calender</title>
     <link rel="stylesheet" type="text/css" href="Style.css">
+    <script type="text/javascript" src="Style.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <div class="index">
         <div class="downLoad"></div>
         <div class="header">
-            <button class="pre_month" id="preMonth"></button>
+            <button class="pre_month" id="show_last_month"></button>
             <span class="year">
-                <button id="nowYear" class="year-now"></button>
-                <button id="nowMonth"></button>
-                <button id="nowDate"></button>
+                <span id="current_month"></span>
             </span>
-            <button class="bhd_month" id="nextMonth"></button>
+            <button class="bhd_month" id="show_next_month"></button>
+            <span class="circle left">
+                <a href="#" id="go_back_today">今</a>
+            </span>
             <span class="circle right">
-                <a href="#" class style="color:rgb(255,255,255);text-decoration: none">节</a>
+                <a href="#">节</a>
             </span>
         </div>
     </div>
-    <div>
+    <div id="calendar">
         <div class="weekNum">
             <div class="week weekend">日</div>
             <div class="week">一</div>
@@ -33,12 +36,15 @@
             <div class="week">五</div>
             <div class="week weekend">六</div>
         </div>
-        <div id="dateWrap" class="date-wrap"></div>
+        <div id="calendar_day"></div>
     </div>
 
     <div class="swiper">
-        <div class="dayinfo">
+        <div class="dayInfo">
             <div id="dayNum"></div>
+        </div>
+        <div id="dayInfo1">
+            <span id="weekString"></span>
         </div>
     </div>
 
@@ -71,8 +77,59 @@
             <div class="astroname">
                 处女座
             </div>
-            <div class="logo logo_5">
+            <div class="logo logo_5"></div>
+        </div>
+    </div>
 
+    <div class="weather">
+        <div id="today">
+            <div class="todayText"></div>
+        </div>
+        <div class="todayWeather">
+            <div class="degree">
+                14°
+            </div>
+            <div class="right about">
+                <div class="disc span">
+                    多云
+                </div>
+                <div class="degrees">
+                    17/21°
+                </div>
+            </div>
+            <div class="right control">
+                <div class="citySelect span">
+                    重庆
+                </div>
+                <div class="other">
+                    东南风 | 湿度62%
+                </div>
+            </div>
+        </div>
+        <div class="spanLine"></div>
+        <div class="nextWeather">
+            <div class="next left gradeA">
+                <div>
+                    <div class="weatherLogo weatherLogo_7"></div>
+                    <span class="day">明天</span> <span class="degree">17/20°</span>
+                </div>
+                <div>
+                    <div class="airQualityGrade"></div>
+                    <span class="airQuality">优</span>
+                    <span class="disc">小雨</span>
+                </div>
+            </div>
+            <div class="spanLine1"></div>
+            <div class="next right gradeA">
+                <div>
+                    <div class="weatherLogo weatherLogo_7"></div>
+                    <span class="day">后天</span> <span class="degree">15/18°</span>
+                </div>
+                <div>
+                    <div class="airQualityGrade"></div>
+                    <span class="airQuality">优</span>
+                    <span class="disc">小雨</span>
+                </div>
             </div>
         </div>
     </div>
@@ -80,5 +137,3 @@
 </body>
 
 </html>
-
-<script type="text/javascript" src="Style.js"></script>

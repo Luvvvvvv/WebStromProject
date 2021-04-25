@@ -7,14 +7,14 @@ body {
 .downLoad {
     background: url("image/top.jpg");
     background-size: cover;
-    width: 100%;
+    width: 1010px;
     height: .5rem;
 }
 
 /*header*/
 .header {
     height: .4rem;
-    width: 100%;
+    width: 1010px;
     background: #d03f3f;
     box-sizing: border-box;
     position: relative;
@@ -33,17 +33,10 @@ body {
 }
 
 .header span {
-    font-size: 25px;
+    font-size: 20px;
     float: left;
-    margin-top: 36px;
-    margin-left: 40px;
-}
-
-.header span button {
-    border: none;
-    background-color: #d03f3f;
-    color: white;
-    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 25px;
 }
 
 .header .year:after {
@@ -52,7 +45,7 @@ body {
     width: 19px;
     height: 11px;
     background: url("image/header/down_arrow.png");
-    margin-top: 9px;
+    margin-top: 20px;
     margin-left: 10px;
 }
 
@@ -67,17 +60,36 @@ body {
     border: none;
 }
 
-.header .right {
+.header .left a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.header .left {
     font-size: 38px;
 }
 
+.header .left a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.header .right {
+
+    font-size: 38px;
+    margin-left: 520px;
+}
+
+.header .right a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
 .header .circle {
-    float: right;
     border: 5px solid #fff;
     border-radius: 100%;
     height: 50px;
     width: 50px;
-    margin-right: 50px;
     margin-top: 25px;
     text-align: center;
 }
@@ -94,7 +106,7 @@ body {
 .week {
     float: left;
     text-align: center;
-    width: 0.52rem;
+    width: 0.5rem;
     margin: 0 1px;
 }
 
@@ -102,47 +114,123 @@ body {
     color: #d03f3f;
 }
 
-.week-line {
-    letter-spacing: 58px;
+.now_time {
+    background-color: #FFEBF0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
     font-size: 20px;
-    line-height: 80px;
+}
+
+#calendar {
+    height: 3.4rem;
+    width: 1010px;
+    background-color: white;
+}
+
+#calendar_day {
+    position: relative;
+    top: 100px;
+
+}
+
+.dateItem .selected {
     text-align: center;
-    margin-left: 40px;
+    font-size: 35px;
+    height: .52rem;
+    width: .51rem;
+    padding: .05rem 0 .07rem;
+    float: left;
 }
 
-.date-wrap {
-    position: absolute;
-    top: px;
-    left: 10px;
-}
-
-.date-line {
-    height: 180px;
-}
-
-.date-item {
-    font-size: 40px;
-    display: inline-block;
-    width: 140px;
-    border: 1px solid beige;
+.dateItem {
     text-align: center;
+    font-size: 35px;
+    height: .60rem;
+    width: .51rem;
+    padding: .05rem 0 .07rem;
+    float: left;
+    border: 2px transparent;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
- 
+
+.today_div {
+    border: 2px solid #4e555b;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.selected {
+    border: 2px solid #d03f3f;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
 /* 日期 */
-.swiper{
+
+.carousel {
+    position: relative;
+    width: 3030px;
+    overflow: hidden;
+}
+
+
+.swiper {
+    position: relative;
+    height: 320px;
+    width: 1010px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+    float: left;
+
+}
+
+.dayInfo {
+    height: .6rem;
+    position: relative;
+    background-color: white;
+    width: 900px;
+    left: 55px;
+    top: 40px;
+}
+
+#dayNum {
+    font-size: 120px;
+    color: #d03f3f;
+    float: left;
+    text-align: center;
+}
+
+.dayInfo1 {
+    display: block;
+    height: .6rem;
+    position: relative;
+    background-color: white;
+    width: 900px;
+    left: 55px;
+    top: 40px;
+}
+
+#weekString {
+    font-size: 35px;
     position: absolute;
+    left: 220px;
+    top: 130px;
 }
 
 
 
 /*astro*/
 .astro {
-    background: url("image/astro/astrobackground.jpg");
+    background: url(image/astro/astrobackground.jpg);
     height: 1.07rem;
-    position: relative;
-    top: 1100px;
+    position: absolute;
     color: white;
     font-size: 25px;
+    width: 1010px;
+    top: 1580px;
 }
 
 
@@ -203,4 +291,180 @@ body {
     background: url("image/astro/virgo.png");
     background-size: 100%;
     margin-top: 30px;
+}
+
+
+/* weather */
+
+.weather {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    height: 500px;
+    position: relative;
+    background-color: #ffffff;
+    width: 1010px;
+    top: 740px;
+}
+
+.weather #today {
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #999;
+    border-bottom-left-radius: 6px;
+    color: #fff;
+    padding: 1.5px 2px .5px 6px;
+}
+
+.todayText {
+    line-height: 25px;
+    font-size: 25px;
+}
+
+.weather .todayWeather .degree {
+    color: #34a8d9;
+    font-size: 120px;
+    float: left;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+
+.weather .todayWeather .about {
+    padding-left: .09rem;
+    float: left;
+    color: #333;
+    position: absolute;
+    font-size: 30px;
+    left: 250px;
+    top: 90px;
+}
+
+.degrees {
+    margin-top: 30px;
+}
+
+.weather .todayWeather .control {
+    float: right;
+    text-align: right;
+    color: #777;
+    font-size: 30px;
+    position: absolute;
+    top: 110px;
+    right: 40px;
+}
+
+.weather .todayWeather .right .citySelect:before {
+    float: right;
+    position: relative;
+    margin-left: .03rem;
+    content: "";
+    min-width: .09rem;
+    min-height: .09rem;
+    -webkit-transform: translateY(.025rem);
+    transform: translateY(.025rem);
+    right: 0;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAAxklEQVR4AWIgFqSlpQHarWtjBQIoCsMrXTyPHw7NUARk5NABTjNbASFSwCZohsVwLu4uZ5h7Zv78W18TJVEf1VDIYNgcVkTjtcqsMMllhUlxVlhKYQq7E6xEB5vjCoxnzEIJgZBlGYt7jLCC4IakuJHgqqS4quAiqE4GE0/E0Ol0Ot1rf5XCqEb2hRBPmP7bSv1XUiTFNQVnkeKcVz+MHtTdA3PRzyth3iOwP4Up7J1hn5SwOS5GCZvjopSwOc5GGdRGzrmwCaSQaeFAhHv/AAAAAElFTkSuQmCC);
+    background-size: cover;
+}
+
+.weather .spanLine {
+    width: 90%;
+    margin: 0 auto;
+    height: 5px;
+    background-color: #eaeaea;
+    position: relative;
+    top: 250px;
+}
+
+/* weather next */
+.nextWeather {
+    position: relative;
+    top: -70px;
+}
+
+.weather .nextWeather .left {
+    width: 1.73rem;
+    padding-right: .15rem;
+    border-right: 1px solid #eaeaea;
+    font-size: 30px;
+    position: relative;
+    top: -60px;
+    left: 50px;
+}
+
+.weather .nextWeather .next {
+    float: left;
+    box-sizing: border-box;
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+}
+
+.weather .nextWeather .next .degree {
+    color: #777;
+}
+
+.weather .nextWeather .gradeA .airQualityGrade {
+    background-color: #9aee6b;
+}
+
+.weather .nextWeather .next .airQualityGrade {
+    float: left;
+    height: .13rem;
+    width: .03rem;
+    margin-top: .08rem;
+    margin-right: .05rem;
+    border-radius: .015rem;
+}
+
+.weather .nextWeather .next .disc {
+    margin-top: .08rem;
+    float: right;
+    color: #777;
+}
+
+.weather .nextWeather .next .airQuality {
+    margin-top: .08rem;
+    float: left;
+    color: #777;
+}
+
+.weather .nextWeather .left .weatherLogo {
+    right: .15rem !important;
+}
+
+.weather .nextWeather .next .weatherLogo_7 {
+    background: url(data:image/png;base64,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);
+    background-size: cover;
+}
+
+.weather .nextWeather .next .weatherLogo {
+    position: absolute;
+    right: 0;
+    height: .2rem;
+    width: .2rem;
+}
+
+.weather .nextWeather .right {
+    padding-left: .15rem;
+    width: 1.72rem;
+}
+
+.weather .nextWeather .next {
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 30px;
+}
+
+.spanLine1 {
+    width: 3px;
+    height: 180px;
+    margin: 0 auto;
+    background-color: #eaeaea;
+    position: relative;
+    top: 350px;
+    left: -5px;
 }
