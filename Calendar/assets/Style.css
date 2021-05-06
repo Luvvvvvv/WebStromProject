@@ -5,7 +5,7 @@ body {
 
 /*top*/
 .downLoad {
-    background: url("image/top.jpg");
+    background: url("../image/top.jpg");
     background-size: cover;
     width: 1010px;
     height: .5rem;
@@ -24,7 +24,7 @@ body {
 .header .pre_month {
     float: left;
     background-size: cover;
-    background: url("image/header/left_arrow.png") no-repeat;
+    background: url("../image/header/left_arrow.png") no-repeat;
     width: 14px;
     height: 26px;
     margin-top: .15rem;
@@ -44,7 +44,7 @@ body {
     float: right;
     width: 19px;
     height: 11px;
-    background: url("image/header/down_arrow.png");
+    background: url("../image/header/down_arrow.png");
     margin-top: 20px;
     margin-left: 10px;
 }
@@ -52,7 +52,7 @@ body {
 .header .bhd_month {
     float: left;
     background-size: cover;
-    background: url("image/header/right_arrow.png") no-repeat;
+    background: url("../image/header/right_arrow.png") no-repeat;
     width: 14px;
     height: 26px;
     margin-top: .15rem;
@@ -224,7 +224,7 @@ body {
 
 /*astro*/
 .astro {
-    background: url(image/astro/astrobackground.jpg);
+    background: url(../image/astro/astrobackground.jpg);
     height: 1.07rem;
     position: absolute;
     color: white;
